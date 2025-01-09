@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 min-h-screen flex flex-col justify-between">
+    <header class="text-center py-10">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white tracking-wide">Note App</h1>
+        <p class="text-xl sm:text-2xl text-red-400 font-serif font-thin mt-2">Double Click to delete a Note</p>
+    </header>
+
+    <div id="addnote" class="flex flex-wrap justify-center gap-5 p-5">
+        <!-- Notes will be dynamically added here -->
+    </div>
+
+    <div class="relative">
+        <button id="btn" class="transition-all duration-200 ease-in-out bg-blue-500 hover:bg-blue-400 fixed bottom-5 right-5 w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl sm:text-4xl shadow-lg hover:scale-110 transform" onclick="getnote()">+</button>
+    </div>
+
+    <footer class="text-center p-4 text-white text-sm">
+        <p>&copy; 2025 </p>
+    </footer>
+</body>
+
+<script src="app.js"></script>
+
+</html>
